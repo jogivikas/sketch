@@ -7,7 +7,7 @@ import {
   SigninSchema,
   CreateRoomSchema,
 } from "@repo/common/types";
-import { prismaClient, PrismaClient } from "@repo/db/client";
+import { prismaClient } from "@repo/db/client";
 
 const app = express();
 app.use(express.json());

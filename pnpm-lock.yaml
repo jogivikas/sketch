@@ -91,6 +91,9 @@ importers:
       '@types/ws':
         specifier: ^8.18.1
         version: 8.18.1
+      jsonwebtoken:
+        specifier: ^9.0.2
+        version: 9.0.2
       ws:
         specifier: ^8.18.3
         version: 8.18.3
@@ -127,13 +130,13 @@ importers:
       '@prisma/client':
         specifier: 6.16.2
         version: 6.16.2(prisma@6.16.2(typescript@5.9.2))(typescript@5.9.2)
-      prisma:
-        specifier: ^6.16.2
-        version: 6.16.2(typescript@5.9.2)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      prisma:
+        specifier: 6.16.2
+        version: 6.16.2(typescript@5.9.2)
 
   packages/eslint-config:
     devDependencies:
