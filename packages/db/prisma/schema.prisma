@@ -1,12 +1,6 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
+// prisma/schema.prisma
 generator client {
   provider = "prisma-client-js"
-  // output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -27,7 +21,7 @@ model User {
 model Room {
   id        Int      @id @default(autoincrement())
   slug      String
-  createsAt DateTime @default(now())
+  createdAt DateTime @default(now()) // renamed from createsAt -> createdAt
   adminId   String
 
   admin User   @relation(fields: [adminId], references: [id])
